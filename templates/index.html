@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hypermall GUI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <div class="container py-4">
+    <div class="card shadow-sm mb-4">
+      <div class="card-body">
+        <h1 class="card-title mb-3">Hypermall MSB Config</h1>
+        <form method="post">
+          <div class="mb-3">
+            <label class="form-label">Pear URL</label>
+            <input type="text" class="form-control" name="pear_url" value="{{cfg.pear_url}}">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Store Name</label>
+            <input type="text" class="form-control" name="store" value="{{cfg.store}}">
+          </div>
+          <button type="submit" class="btn btn-primary">Save &amp; Restart</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="card shadow-sm mb-4">
+      <div class="card-body">
+        <h2 class="card-title mb-3">Current Command</h2>
+        <pre class="bg-white p-2 rounded">{{'pear run ' + cfg.pear_url + ' ' + cfg.store}}</pre>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <a href="/logs" class="btn btn-outline-secondary">View Log</a>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

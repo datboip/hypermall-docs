@@ -1,8 +1,10 @@
-o# Summary
+# Table of contents
 
-* [Home](./)
-* [01 – Prereqs](01-Prereqs.md)
-* [02 – Scripts](02-Scripts.md)
-* [03 – Services](03-Services.md)
-* [04 – GUI](04-GUI.md)
-* [Docker](Docker.md)
+* [HyperMall GUI and Pear Validator](README.md)
+* [01 - Prerequisites](01-prereqs.md)
+* [02 - Start/Stop Scripts](02-scripts.md)
+* [03 - Systemd Services](03-services.md)
+* [04 - Web GUI](04-gui.md)
+* [Docker](docker.md)
+* [Summary](summary.md)
+* [docs](docs.md)
